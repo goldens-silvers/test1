@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سلة التسوق</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function () {
+      let cartContainer = document.getElementById("cart");
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>سلة التسوق فارغة.</p>";
+      } else {
+        let html = "<ul>";
+        let total = 0;
+        cart.forEach(item => {
+          html += `<li>${item.name} - ${item.price} ريال</li>`;
+          total += item.price;
+        });
+        html += `</ul><p><strong>الإجمالي: ${total} ريال</strong></p>`;
+        cartContainer.innerHTML = html;
+      }
+    }
+  </script>
+</head>
+<body>
+<header>
+  <h1>سلة التسوق</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+  </nav>
+</header>
+<main>
+  <h2>محتويات السلة</h2>
+  <div id="cart"></div>
+</main>
+<footer>
+  <p>&copy; 2025 الفضة الدهبية. جميع الحقوق محفوظة.</p>
+</footer>
+</body>
+</html>
