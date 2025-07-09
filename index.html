@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>الفضة الدهبية | الرئيسية</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Silver - متجر المجوهرات</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #d4af37, #c0c0c0);
+      background-attachment: fixed;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .product-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-<header>
-    <h1>الفضة الدهبية</h1>
-    <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="about.html">من نحن</a>
-        <a href="contact.html">تواصل معنا</a>
-        <a href="cart.html">السلة</a>
-    </nav>
-</header>
-<main class="products">
-    <div class="product">
-        <a href="product1.html">
-            <img src="https://images.unsplash.com/photo-1602029225110-5f3c19153d89?auto=format&fit=crop&w=600&h=600" alt="خاتم فضة">
-            <h3>خاتم فضة عيار 925</h3>
-        </a>
-    </div>
-    <div class="product">
-        <a href="product2.html">
-            <img src="https://images.unsplash.com/photo-1610622512806-f7502af28f9a?auto=format&fit=crop&w=600&h=600" alt="سلسلة ذهب">
-            <h3>سلسلة ذهب عيار 21</h3>
-        </a>
-    </div>
-</main>
-<footer>
-    <p>&copy; 2025 الفضة الدهبية. جميع الحقوق محفوظة.</p>
-    <div class="social-icons">
-        <a href="https://facebook.com/AbdalazizAl" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-        <a href="https://instagram.com/zizz77832" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-        <a href="https://tiktok.com/@zizz77832" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok"></a>
-        <a href="mailto:zizz77832@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
-    </div>
-</footer>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Golden Silver</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#hero">الرئيسية</a></li>
+      <li><a href="#products">المنتجات</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="hero" style="text-align:center; padding:2rem 0">
+      <h1>مرحباً بك في متجر <span style="color:#d4af37">Golden Silver</span></h1>
+      <p>اكتشف أناقة الذهب وروعة الفضة بتصاميم فاخرة</p>
+      <a href="#products" role="button">تصفح المنتجات</a>
+    </section>
+
+    <section id="products">
+      <h2 style="text-align:center">منتجاتنا</h2>
+      <div class="grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1589927986089-35812388d1d1?auto=format&fit=crop&w=800&q=80" alt="خاتم" width="100%" />
+          <h3>خاتم ملكي</h3>
+          <p>خاتم فاخر بتصميم أنيق</p>
+          <p><strong>1200 جنيه</strong></p>
+          <a href="https://wa.me/201032781340?text=أرغب%20في%20طلب%20خاتم%20ملكي%20بسعر%201200%20جنيه" role="button">اطلب الآن</a>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1612817159948-f060cc1c6333?auto=format&fit=crop&w=800&q=80" alt="سلسلة" width="100%" />
+          <h3>سلسلة راقية</h3>
+          <p>تصميم عصري من الذهب النقي</p>
+          <p><strong>950 جنيه</strong></p>
+          <a href="https://wa.me/201032781340?text=أرغب%20في%20طلب%20سلسلة%20راقية%20بسعر%20950%20جنيه" role="button">اطلب الآن</a>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1600185365483-26d7adf03241?auto=format&fit=crop&w=800&q=80" alt="إسورة" width="100%" />
+          <h3>إسورة فاخرة</h3>
+          <p>تفاصيل دقيقة وجودة عالية</p>
+          <p><strong>750 جنيه</strong></p>
+          <a href="https://wa.me/201032781340?text=أرغب%20في%20طلب%20إسورة%20فاخرة%20بسعر%20750%20جنيه" role="button">اطلب الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:3rem">
+      <h2>طرق الدفع</h2>
+      <ul>
+        <li>📲 فودافون كاش: <strong>01032781340</strong></li>
+        <li>🏦 بنكك: <em>برجاء التواصل لمعرفة التفاصيل</em></li>
+        <li>📤 بعد التحويل: أرسل صورة الإيصال على WhatsApp</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>Golden Silver هو متجر إلكتروني متخصص في تقديم مجوهرات ذهبية وفضية فاخرة بتصاميم أنيقة وجودة عالية، تُصنع بعناية لتليق بذوقك الرفيع.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> •
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> •
+      <a href="https://wa.me/201032781340" target="_blank">WhatsApp</a>
+    </small>
+    <p>جميع الحقوق محفوظة © Golden Silver 2025</p>
+  </footer>
 </body>
 </html>
